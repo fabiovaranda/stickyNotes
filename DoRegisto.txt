@@ -1,0 +1,13 @@
+<?php
+	session_start();
+	if (isset($_POST['Email'])){
+		$email = $_POST['Email'];
+		$nome = $_POST['Nome'];
+		$idTipo = $_POST['idTipo'];
+		$pwd = md5($_POST['pwd']); //md5 serve para encriptar a password
+		include_once('DataAccess.php');
+		$da = new DataAccess();
+		$da->inserirUtilizador($nome, $email, $pwd, $idTipo);
+		echo "<script>alert('Utilizador registado com sucesso')</script>";
+	}
+?>

@@ -1,0 +1,17 @@
+body {
+  background: url(imagens/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ }
+.v-separator
+{
+    content: "";
+    display: inline-block;
+    width: 0px;
+    height: 160px;
+    border-right: 1px solid #fafafa;
+    border-left: 1px solid #b4b4b4;
+    padding: 0;
+}
